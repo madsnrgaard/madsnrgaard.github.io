@@ -3,10 +3,10 @@ project:
   output-dir: .
 
 website:
-  title: "Mads Nørgaard"  
+  title: ""  
   search: false
   navbar:
-    right:
+    left:
       - text: "about"
         href: index.qmd
       - text: "·"
