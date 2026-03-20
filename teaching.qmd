@@ -1,0 +1,27 @@
+---
+title: ""
+---
+
+## Teaching
+
+::: cv-entry
+[2025]{.cv-year}
+[Social Groups and the Formation of Political Attitudes]{.cv-title}
+[Master's Seminar in Political Science at Aarhus University with 24 participants]{.cv-sub}
+[Average student satisfaction: 4.5/5]{.cv-sub-sub}
+:::
+
+::: cv-entry
+[2024]{.cv-year}
+[General Political Science]{.cv-title}
+[Bachelors course in Political Science at Aarhus University with 25x2 participants]{.cv-sub}
+[Average student satisfaction: 5/5]{.cv-sub-sub}
+:::
+
+ 
+
+::: cv-entry
+[2020, 2021]{.cv-year}
+[Methods II - Quantitative Methods]{.cv-title}
+[TA in the study cafe, "Metodevagten"]{.cv-sub}
+:::

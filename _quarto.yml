@@ -1,0 +1,39 @@
+project:
+  type: website
+
+website:
+  title: "Mads Nørgaard"  
+  search: false
+  navbar:
+    right:
+      - text: "about"
+        href: index.qmd
+      - text: "·"
+        href: "#" 
+      - text: "research"
+        href: research.qmd
+      - text: "·"
+        href: "#"
+      - text: "teaching"
+        href: "teaching.qmd"
+      - text: "·"
+        href: "#"
+      - text: "CV"
+        href: cv.qmd
+
+
+  page-footer:
+    center: "© 2026 MAds Nørgaard · Political Science · Aarhus University"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: custom.css
+    toc: false
+    link-external-newwindow: true
+    include-after-body: carousel.html
+
+
+ 

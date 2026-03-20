@@ -1,0 +1,6 @@
+---
+title: ""
+---
+```{=html}
+<a href="documents/CV_2025.pdf" target="_blank" class="btn-cv">[curriculum vitae]</a>
+```

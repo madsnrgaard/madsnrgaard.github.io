@@ -1,0 +1,21 @@
+<script>
+function moveSlide(btn, direction) {
+  const carousel = btn.parentElement;
+  const track = carousel.querySelector('.carousel-track');
+  const slides = track.querySelectorAll('.carousel-slide');
+  let current = [...slides].findIndex(s => s.classList.contains('active'));
+  slides[current].classList.remove('active');
+  current = current + direction;
+  slides[current].classList.add('active');
+
+  carousel.querySelector('.prev').style.visibility = current === 0 ? 'hidden' : 'visible';
+  carousel.querySelector('.next').style.visibility = current === slides.length - 1 ? 'hidden' : 'visible';
+}
+
+// Hide prev button on page load for all carousels
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.carousel').forEach(c => {
+    c.querySelector('.prev').style.visibility = 'hidden';
+  });
+});
+</script>
