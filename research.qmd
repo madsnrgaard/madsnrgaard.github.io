@@ -13,12 +13,12 @@ library(pdftools)
 #pdf_convert("research_outputs/pol_class_paper/paper1a.pdf", format = "png", dpi = 150, filenames = "research_outputs/pol_class_paper/paper1a.png")
 
 ```
-# Research
+<!-- # Research -->
 
 ## Publications 
 None :)
 
-## Working Papers
+## Working Papers 
 
 
 
@@ -52,7 +52,7 @@ None :)
 <!-- [PDF](#) · [Pre-registration](#) -->
 <!-- ::: -->
 :::
-
+ 
 
 ```{r}
 #| echo: false

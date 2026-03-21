@@ -9,9 +9,9 @@ website:
     right:
       - text: "research"
         href: research.qmd
-      - text: "teaching"
+      - text: "teaching" 
         href: "teaching.qmd" 
-      - text: "CV"
+      - text: "cv"
         href: cv.qmd
       - icon: envelope
         href: "mailto:mnr@ps.au.dk"

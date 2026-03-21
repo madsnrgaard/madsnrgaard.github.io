@@ -32,6 +32,8 @@ body {
   border-bottom: 1px solid var(--rule) !important;
   font-family: var(--font-serif) !important;
   font-size: 18px !important;
+  color: var(--ink);
+  font-weight: 500;
   letter-spacing: 0.06em;
 }
 
@@ -46,11 +48,12 @@ body {
 
 .navbar-brand {
   font-family: var(--font-serif) !important;
-  font-size: 1.8rem !important;
+  font-size: 2rem !important;
+  font-weight: 500;
   letter-spacing: 0.01em;
   border-bottom: none;
   text-transform: none !important;
-  color: var(--ink-light) !important;
+  color: var(--ink) !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
@@ -67,7 +70,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--accent) !important;
+  color: var(--ink) !important;
 }
 
 .bi-envelope {
@@ -81,6 +84,34 @@ body {
 .nav-link:has(.bi-envelope):hover .bi-envelope {
   color: var(--accent);
 }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .cv-entry { grid-template-columns: 1fr; }
+  .cv-year  { margin-bottom: 0.1rem; }
+ 
+  /* Navbar: smaller title, left-aligned, smaller hamburger */
+  .navbar-brand {
+    font-size: 1.1rem !important;
+  }
+ 
+  .navbar > .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+ 
+  .navbar-toggler {
+    padding: 0.15rem 0.4rem !important;
+    font-size: 0.85rem !important;
+  }
+ 
+  .navbar-toggler-icon {
+    width: 1.1em !important;
+    height: 1.1em !important;
+  }
+}
+
+
 /* ── Main content ── */
 main {
   max-width: 700px;
@@ -96,8 +127,30 @@ main p {
 /* ── Typography ── */ 
 h1 {
   font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 4.5vw, 2.5rem);
-  font-weight: 400;
+  font-size: clamp(1rem, 3.5vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  max-width: 700px;
+  margin-left: 0 auto;
+
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 25rem;
+  height: 1px;
+  background: var(--rule);
+  margin-top: 0.4rem;
+}
+
+h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--ink-light);
@@ -107,34 +160,8 @@ h1 {
 
 }
 
-.home h1 {
-  font-size: clamp(1.75rem, 5vw, 2.5rem);
-  color: var(--ink);
-  margin-bottom: 1.2rem;
-}
-
-h2 {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-bottom: none;
-  margin-top: 2.8rem;
-  margin-bottom: 0.8rem;
-  color: var(--ink-light);
-  position: relative;
-  max-width: 700px;
-  padding-bottom: 0.6rem;
-}
 
 
-h2::after {
-  content: "";
-  display: block;
-  width: 15rem;
-  height: 1px;
-  background: var(--rule);
-  margin-top: 0.4rem;
-}
 
 h3 {
   font-family: var(--font-serif);
@@ -163,7 +190,7 @@ a:hover {
 hr {
   border: none;
   border-top: 1px solid var(--rule);
-  margin: 2.4rem 0;
+  margin: 2.4rem 0; 
 }
 
 /* ── Eyebrow / label ── */
@@ -172,8 +199,9 @@ hr {
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--ink-light);
   margin-bottom: 1.2rem;
+  margin-top: 0.4rem;
 }
 
 .section-label {
@@ -194,18 +222,20 @@ hr {
 /* ── Paper cards ── */
 /* ── Working Paper ── */
 .wp-paper {
-  border-bottom: 1px solid var(--rule);
   padding: 1.6rem 0;
   max-width: 700px;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
 }
 
 .wp-paper-title {
   font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--ink);
+  font-weight: 500;
+  color: var(--ink-light);
   line-height: 1;
   display: block;
   margin-bottom: -0.5rem;
+  margin-top: -1rem;
 }
 
 .wp-paper-author {
@@ -284,12 +314,14 @@ details[open] summary {
 .ip-paper {
   padding: 1.6rem 0;
   max-width: 700px;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
 }
 
 .ip-paper-title {
   font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--ink);
+  font-weight: 500;
+  color: var(--ink-light);
   line-height: 1;
   display: block;
   margin-bottom: -0.5rem;
