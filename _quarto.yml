@@ -3,32 +3,31 @@ project:
   output-dir: .
 
 website:
-  title: ""  
+  title: "Mads Nørgaard"  
   search: false
   navbar:
-    left:
-      - text: "about"
-        href: index.qmd
-      - text: "·"
-        href: "#" 
+    right:
       - text: "research"
         href: research.qmd
-      - text: "·"
-        href: "#"
       - text: "teaching"
-        href: "teaching.qmd"
-      - text: "·"
-        href: "#"
+        href: "teaching.qmd" 
       - text: "CV"
         href: cv.qmd
+      - icon: envelope
+        href: "mailto:mnr@ps.au.dk"
+        aria-label: "Email"
 
 
   page-footer:
-    center: "© 2026 MAds Nørgaard · Political Science · Aarhus University"
+    center:
+      - text: "email"
+        href: "mailto:mnr@ps.au.dk"
+      - text: "university website"
+        href: "https://www.au.dk/mnr@ps.au.dk"
 
 format:
   html:
-    theme:
+    theme: 
       - cosmo
       - brand
     css: custom.css

@@ -4,11 +4,11 @@ body-classes: "home"
 ---
 
 
+<!-- # Mads Nørgaard -->
 
-# Mads Nørgaard
-```{=html}
-<p class="eyebrow">PhD Candidate · Political Science · Aarhus University</p>
-```
+<!-- ```{=html} -->
+<!-- <p class="eyebrow">PhD Candidate · Political Science · Aarhus University</p> -->
+<!-- ``` -->
 
 Welcome to my website! My name is Mads, and I am a PhD candidate in Political Science at Aarhus University. 
 My research examines how citizens perceive and evaluate their political representatives -- with a particular focus on the social and professional backgrounds of politicians and what these mean for political support. 
@@ -16,9 +16,47 @@ My research examines how citizens perceive and evaluate their political represen
 In my PhD dissertation, I use survey experiments and quantitative text analysis to study how perceptions of political elites shape political trust, feelings of representation, and democratic satisfaction among ordinary citizens.
 
 
+
 ```{=html}
-<a href="mailto:mnr@ps.au.dk" class="mail-link">
-  <i class="bi bi-envelope"></i>
-</a>
+<p class="eyebrow">PhD Candidate · Political Science · Aarhus University</p>
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
