@@ -97,20 +97,20 @@ main {
 }
 
 main p {
-  font-size: clamp(1rem, 2.2vw, 1.1rem);
-  color: var(--ink-light);
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  color: var(--ink);
   max-width: 700px;
 }
 
 /* ── Typography ── */
 h1 {
   font-family: var(--font-serif);
-  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.2; 
   letter-spacing: -0.01em;
   color: var(--ink);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0rem;
   max-width: 700px;
   margin-left: auto;
 }
@@ -126,7 +126,7 @@ h1::after {
 
 h2 {
   font-family: var(--font-serif);
-  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -169,7 +169,7 @@ hr {
 /* ── Eyebrow / label ── */
 .eyebrow {
   font-family: var(--font-mono);
-  font-size: clamp(0.55rem, 1.8vw, 0.72rem);
+  font-size: clamp(0.5rem, 1.8vw, 0.72rem);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-light);
@@ -199,36 +199,37 @@ hr {
 }
 
 .wp-paper-title {
-  font-size: clamp(1rem, 2.2vw, 1.1rem);
-  font-weight: 500;
-  color: var(--ink-light);
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+  font-weight: 400;
+  color: var(--ink);
   line-height: 1;
   display: block;
   margin-bottom: -0.5rem;
-  margin-top: -1rem;
+  margin-top: 0rem;
 }
 
 .wp-paper-author {
-  font-size: clamp(0.82rem, 2vw, 0.92rem);
-  color: var(--ink-light);
+  font-size: clamp(0.75rem, 2vw, 0.92rem);
+  color: var(--ink);
   margin-top: 0;
-  margin-bottom: 0rem;
+  margin-bottom: -0.5rem;
   display: block;
 }
 
 .wp-paper-available {
-  font-size: clamp(0.82rem, 2vw, 0.92rem);
-  color: var(--ink-light);
+  font-size: clamp(0.75rem, 2vw, 0.92rem);
+  color: var(--ink);
   font-style: italic;
-  margin-top: -1rem;
-  margin-bottom: 0.2rem;
+  margin-top: 0rem;
+  margin-bottom: -0.5rem;
   display: block;
 }
 
 .wp-paper-abstract {
-  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-size: clamp(0.75rem, 2vw, 0.95rem);
   color: var(--ink-light);
-  margin-top: 0.6rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   max-width: 700px;
   display: block;
   line-height: 1.4;
@@ -236,12 +237,12 @@ hr {
 
 details summary {
   font-family: var(--font-mono);
-  font-size: clamp(0.62rem, 1.8vw, 0.72rem);
+  font-size: clamp(0.45rem, 1.8vw, 0.72rem);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
   cursor: pointer;
-  margin: 0.6rem 0;
+  margin-top: 1.5rem;
   list-style: none;
 }
 
@@ -256,12 +257,12 @@ details[open] summary {
 .paper-links {
   display: flex;
   gap: 1.2rem;
-  margin-top: 0.8rem;
+  margin-top: 0rem;
 }
 
 .paper-links a {
   font-family: var(--font-mono);
-  font-size: clamp(0.58rem, 1.6vw, 0.68rem);
+  font-size: clamp(0.45rem, 1.6vw, 0.68rem);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -271,23 +272,23 @@ details[open] summary {
   padding: 1.6rem 0;
   max-width: 700px;
   margin-bottom: 1rem;
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 
 .ip-paper-title {
-  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
   font-weight: 500;
-  color: var(--ink-light);
+  color: var(--ink);
   line-height: 1;
   display: block;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
 
 .ip-paper-author {
-  font-size: clamp(0.82rem, 2vw, 0.92rem);
-  color: var(--ink-light);
+  font-size: clamp(0.75rem, 2vw, 0.92rem);
+  color: var(--ink);
   margin-top: 0;
-  margin-bottom: -2.5rem;
+  margin-bottom: -1.5rem;
   display: block;
 }
 
@@ -316,13 +317,13 @@ details[open] summary {
 .cv-sub {
   font-size: clamp(0.8rem, 2vw, 0.9rem);
   font-style: italic;
-  color: var(--ink-light);
+  color: var(--ink);
   display: block;
 }
 
 .cv-sub-sub {
   font-size: clamp(0.8rem, 2vw, 0.9rem);
-  color: var(--ink-light);
+  color: var(--ink);
   display: block;
 }
 
@@ -336,7 +337,7 @@ details[open] summary {
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   letter-spacing: 0.08em;
   text-transform: none;
-  color: var(--ink-light) !important;
+  color: var(--ink) !important;
   background: var(--paper);
   border: none !important;
   padding: 0.65rem 1.2rem;
@@ -350,9 +351,12 @@ details[open] summary {
   border-top: 1px solid var(--rule) !important;
   background: var(--paper) !important;
   font-family: var(--font-mono) !important;
-  font-size: clamp(0.58rem, 1.6vw, 0.68rem) !important;
+  max-width: 700px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-weight: 500;
+  font-size: clamp(0.70rem, 1.6vw, 0.8rem) !important;
   color: var(--ink-faint) !important;
-  letter-spacing: 0.06em;
 }
 
 /* ── Carousel ── */
@@ -400,21 +404,39 @@ details[open] summary {
   color: var(--accent);
 }
 
+.nav-footer-left,
+.nav-footer-right {
+  display: flex !important;
+}
+
+.nav-footer p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav-footer .nav-link {
+  padding: 0 0.5rem !important;
+}
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .navbar-brand {
-    font-size: 1.5rem !important;
+  nav.navbar .container-fluid {
+    display: flex !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0 !important;
   }
-  
 
-  .navbar-toggler {
-    padding: 0.15rem 0.4rem !important;
-    font-size: 0.75rem !important;
-  }
+  nav.navbar .container-fluid .navbar-toggler {
+  order: 2 !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  font-size: 0.75rem !important;
+  padding: 0.15rem 0.4rem !important;
+  } 
 
   .navbar-toggler-icon {
-    width: 1.1em !important;
-    height: 1.1em !important;
+    width: 1rem !important;
+    height: 1rem !important;
   }
 
   main,
@@ -435,4 +457,9 @@ details[open] summary {
   .cv-year {
     margin-bottom: 0.1rem;
   }
+
+
+.nav-footer .nav-link {
+  padding: 0 0.5rem !important;
+}
 }

@@ -2,7 +2,7 @@
 title: ""
 ---
 
-## Teaching
+# Teaching
 
 ::: cv-entry
 [2025]{.cv-year}

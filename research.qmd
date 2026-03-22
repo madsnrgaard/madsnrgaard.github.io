@@ -15,17 +15,17 @@ library(pdftools)
 ```
 <!-- # Research -->
 
-## Publications 
+# Publications 
+\newline
+
 None :)
 
-## Working Papers 
-
+# Working Papers
 
 
 ::: wp-paper
 [The Political Class in Citizens' Minds: Mapping Public Perceptions of Politicians]{.wp-paper-title} 
 
-[Nørgaard, Mads]{.wp-paper-author} 
 
 [Available upon request]{.wp-paper-available}
 
@@ -70,7 +70,6 @@ pdf_convert("research_outputs/professionalisation_paper/plot3.pdf", format = "pn
 ::: wp-paper
 [Too Professional to Represent? Perceptions of Politicians’ Careers and Feelings of Representation]{.wp-paper-title}
 
-[Nørgaard, Mads]{.wp-paper-author} 
 
 ```{=html}
 <details>
@@ -98,17 +97,18 @@ pdf_convert("research_outputs/professionalisation_paper/plot3.pdf", format = "pn
 :::
 
 ## Work in Progress
+::: ip-paper
+[The Symbolic Consequences of Class Representation: Evidence from Britain and Denmark]{.ip-paper-title}
+
+[(with Geoffrey Evans)]{.ip-paper-author}
+:::
 
 ::: ip-paper
 [Who They Are or What They Do? Descriptive and Symbstantive Class Representation and Political Support]{.ip-paper-title}
-
-[Nørgaard, Mads]{.ip-paper-author} 
-
 :::
 
 ::: ip-paper
 [Class Attitudes and Political Trust]{.ip-paper-title}
-
-[Nørgaard, Mads]{.ip-paper-author} 
 :::
+
 

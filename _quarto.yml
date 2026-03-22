@@ -6,7 +6,7 @@ website:
   title: "Mads Nørgaard"  
   search: false
   navbar:
-    right:
+    right: 
       - text: "research"
         href: research.qmd
       - text: "teaching" 
@@ -17,9 +17,10 @@ website:
         href: "mailto:mnr@ps.au.dk"
         aria-label: "Email"
 
-
-  page-footer: 
-    center:
+  page-footer:
+    left:
+      - text: "email &nbsp;"
+        href: "mailto:mnr@ps.au.dk"
       - text: "university website"
         href: "https://www.au.dk/mnr@ps.au.dk"
 
@@ -32,6 +33,7 @@ format:
     toc: false
     link-external-newwindow: true
     include-after-body: carousel.html
+
 
 
  
