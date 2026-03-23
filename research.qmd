@@ -14,7 +14,7 @@ library(pdftools)
 
 ```
 <!-- # Research -->
-
+ 
 # Publications 
 \newline
 
@@ -100,7 +100,7 @@ pdf_convert("research_outputs/professionalisation_paper/plot3.pdf", format = "pn
 ::: ip-paper
 [The Symbolic Consequences of Class Representation: Evidence from Britain and Denmark]{.ip-paper-title}
 
-[(with Geoffrey Evans)]{.ip-paper-author}
+<!-- [(with Geoffrey Evans)]{.ip-paper-author} -->
 :::
 
 ::: ip-paper

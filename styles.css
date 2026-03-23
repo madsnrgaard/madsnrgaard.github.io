@@ -34,7 +34,7 @@ body {
   background: var(--paper) !important;
   border-bottom: 1px solid var(--rule) !important;
   font-family: var(--font-serif) !important;
-  font-size: clamp(16px, 2vw, 18px) !important;
+  font-size: clamp(14px, 1.5vw, 16px) !important;
   color: var(--ink);
   font-weight: 500;
   letter-spacing: 0.06em;
@@ -66,7 +66,7 @@ body {
 .navbar-nav .nav-link {
   color: var(--ink-light) !important;
   transition: color 0.2s;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.5rem, 1.25vw, 1.1rem);
 }
 
 .navbar-nav .nav-link.active {
@@ -79,10 +79,10 @@ body {
 }
 
 .bi-envelope {
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-size: clamp(0.4rem, 1vw, 0.8rem);
   color: var(--ink-light);
   position: relative;
-  top: 5px;
+  top: 3px;
   transition: color 0.2s;
 }
 
@@ -200,7 +200,7 @@ hr {
 
 .wp-paper-title {
   font-size: clamp(0.9rem, 2.2vw, 1.1rem);
-  font-weight: 400;
+  font-weight: 450;
   color: var(--ink);
   line-height: 1;
   display: block;
@@ -277,7 +277,7 @@ details[open] summary {
 
 .ip-paper-title {
   font-size: clamp(0.9rem, 2.2vw, 1.1rem);
-  font-weight: 500;
+  font-weight: 450;
   color: var(--ink);
   line-height: 1;
   display: block;
@@ -363,9 +363,10 @@ details[open] summary {
 .carousel {
   display: flex;
   align-items: center;
+  justify-content: center;    /* horizontal centering */
   gap: 0.8rem;
   margin: 1rem 0;
-  max-width: 100%;
+  max-width: 100%%;
 }
 
 .carousel-track {
@@ -375,10 +376,12 @@ details[open] summary {
 }
 
 .carousel-track img {
-  width: 100%;
+  align-self: center;
+  width: 60%;
   border: 1px solid var(--rule);
+  margin: 0 auto; 
 }
-
+ 
 .carousel-slide {
   display: none;
   width: 100%;
