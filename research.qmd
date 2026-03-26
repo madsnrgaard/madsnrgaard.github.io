@@ -78,17 +78,17 @@ pdf_convert("research_outputs/professionalisation_paper/plot3.pdf", format = "pn
 </details>
 ```
 
-```{=html}
-<div class="carousel">
-  <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#8592;</button>
-  <div class="carousel-track">
-    <img src="research_outputs/professionalisation_paper/plot1.png" class="carousel-slide active">
-    <img src="research_outputs/professionalisation_paper/plot2.png" class="carousel-slide">
-    <img src="research_outputs/professionalisation_paper/plot3.png" class="carousel-slide">
-  </div>
-  <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#8594;</button>
-</div>
-```
+<!-- ```{=html} -->
+<!-- <div class="carousel"> -->
+<!--   <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#8592;</button> -->
+<!--   <div class="carousel-track"> -->
+<!--     <img src="research_outputs/professionalisation_paper/plot1.png" class="carousel-slide active"> -->
+<!--     <img src="research_outputs/professionalisation_paper/plot2.png" class="carousel-slide"> -->
+<!--     <img src="research_outputs/professionalisation_paper/plot3.png" class="carousel-slide"> -->
+<!--   </div> -->
+<!--   <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#8594;</button> -->
+<!-- </div> -->
+<!-- ``` -->
 
 ::: paper-links
 [Pre-registration](research_outputs/professionalisation_paper/prereg.pdf)
