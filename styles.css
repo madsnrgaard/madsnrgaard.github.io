@@ -422,11 +422,19 @@ details[open] summary {
 }
 
 /* ── Responsive ── */
+
 @media (max-width: 600px) {
   nav.navbar .container-fluid {
-    display: flex !important;
-    padding-left: 0.5rem !important;
-    padding-right: 0 !important;
+    padding-left: 1rem !important;  /* was 0.5rem, still tight */
+    padding-right: 0.5rem !important;
+  }
+  
+  nav.navbar .nav-link {
+    font-size: 0.95rem !important;
+  }
+
+  .carousel-track img {
+    width: 100%;
   }
 
   nav.navbar .container-fluid .navbar-toggler {
@@ -452,10 +460,10 @@ details[open] summary {
     max-width: 100%;
     width: 100%;
   }
-
-  .cv-entry {
-    grid-template-columns: 1fr;
-  }
+ 
+.cv-entry {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
 
   .cv-year {
     margin-bottom: 0.1rem;
