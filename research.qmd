@@ -17,12 +17,12 @@ library(pdftools)
 ```
 <!-- # Research -->
  
-# Publications 
+## Publications 
 \newline
 
 None :)
 
-# Working Papers
+## Working Papers
 
 
 ::: wp-paper
@@ -105,33 +105,33 @@ pdf_convert("research_outputs/professionalisation_paper/plot4.pdf", format = "pn
 :::
 
 
-::: wp-paper 
-[Perceptions of Descriptive Class Representation and Political Efficacy]{.wp-paper-title}
+<!-- ::: wp-paper  -->
+<!-- [Perceptions of Descriptive Class Representation and Political Efficacy]{.wp-paper-title} -->
 
-[Available upon request]{.wp-paper-available}
-
-
-```{=html}
-<details>
-<summary>Abstract</summary>
-<p class="wp-paper-abstract">While the symbolic consequences of perceived descriptive representation have recently been studied with respect to gender and race, much less is known about class-based descriptive representation. Drawing on original survey data from Denmark, this letter makes three contributions. First, I show that perceived descriptive class representation is systematically associated with citizens' levels of external political efficacy. Second, I demonstrate an asymmetry: while perceived working-class inclusion is positively associated with efficacy, perceived upper-class overrepresentation is consistently associated with lower efficacy. Third, I show that while the benefits of perceived working-class inclusion are strongest among working-class identifiers, the associations hold across subjective class categories. These findings highlight citizens' perceptions of the class composition of legislatures as an understudied but consequential dimension of democratic support.</p>
-</details>
-```
+<!-- [Available upon request]{.wp-paper-available} -->
 
 
-```{=html}
-<div class="carousel">
-  <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#8592;</button>
-  <div class="carousel-track">
-    <img src="research_outputs/class_representation_DK/plot1.png" class="carousel-slide active">
-    <img src="research_outputs/class_representation_DK/plot2.png" class="carousel-slide">
-    <img src="research_outputs/class_representation_DK/plot3.png" class="carousel-slide">
-  </div>
-  <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#8594;</button>
-</div>
-```
+<!-- ```{=html} -->
+<!-- <details> -->
+<!-- <summary>Abstract</summary> -->
+<!-- <p class="wp-paper-abstract">While the symbolic consequences of perceived descriptive representation have recently been studied with respect to gender and race, much less is known about class-based descriptive representation. Drawing on original survey data from Denmark, this letter makes three contributions. First, I show that perceived descriptive class representation is systematically associated with citizens' levels of external political efficacy. Second, I demonstrate an asymmetry: while perceived working-class inclusion is positively associated with efficacy, perceived upper-class overrepresentation is consistently associated with lower efficacy. Third, I show that while the benefits of perceived working-class inclusion are strongest among working-class identifiers, the associations hold across subjective class categories. These findings highlight citizens' perceptions of the class composition of legislatures as an understudied but consequential dimension of democratic support.</p> -->
+<!-- </details> -->
+<!-- ``` -->
 
-:::
+
+<!-- ```{=html} -->
+<!-- <div class="carousel"> -->
+<!--   <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#8592;</button> -->
+<!--   <div class="carousel-track"> -->
+<!--     <img src="research_outputs/class_representation_DK/plot1.png" class="carousel-slide active"> -->
+<!--     <img src="research_outputs/class_representation_DK/plot2.png" class="carousel-slide"> -->
+<!--     <img src="research_outputs/class_representation_DK/plot3.png" class="carousel-slide"> -->
+<!--   </div> -->
+<!--   <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#8594;</button> -->
+<!-- </div> -->
+<!-- ``` -->
+
+<!-- ::: -->
 
 ## Work in Progress
 ::: ip-paper
