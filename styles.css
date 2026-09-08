@@ -355,8 +355,9 @@ details[open] summary {
   margin-left: auto !important;
   margin-right: auto !important;
   font-weight: 500;
+  padding-left: 0.25rem !important;
   font-size: clamp(0.70rem, 1.6vw, 0.8rem) !important;
-  color: var(--ink-faint) !important;
+  color: var(--ink-light) !important;
 }
 
 /* ── Carousel ── */
@@ -407,19 +408,7 @@ details[open] summary {
   color: var(--accent);
 }
 
-.nav-footer-left,
-.nav-footer-right {
-  display: flex !important;
-}
 
-.nav-footer p {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.nav-footer .nav-link {
-  padding: 0 0.5rem !important;
-}
 
 /* ── Responsive ── */
 
@@ -470,7 +459,4 @@ details[open] summary {
   }
 
 
-.nav-footer .nav-link {
-  padding: 0 0.5rem !important;
-}
 }

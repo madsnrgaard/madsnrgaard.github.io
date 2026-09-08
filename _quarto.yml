@@ -23,6 +23,8 @@ website:
         href: "mailto:mnr@ps.au.dk"
       - text: "university website"
         href: "https://www.au.dk/mnr@ps.au.dk"
+    right: 
+      - text: "updated: 08-09-2026"
 
 format:
   html:
