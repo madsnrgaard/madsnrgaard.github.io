@@ -123,39 +123,81 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script>
 
-function moveSlide(btn, direction) {
+document.addEventListener("DOMContentLoaded", () => {
 
-  const carousel = btn.parentElement;
+  document.querySelectorAll(".wp-tabs").forEach(group => {
 
-  const track = carousel.querySelector('.carousel-track');
+    const items = [...group.querySelectorAll(":scope > .wp-tab")];
 
-  const slides = track.querySelectorAll('.carousel-slide');
+    const bar = document.createElement("div");
 
-  let current = [...slides].findIndex(s => s.classList.contains('active'));
-
-  slides[current].classList.remove('active');
-
-  current = current + direction;
-
-  slides[current].classList.add('active');
+    bar.className = "wp-tabbar";
 
 
 
-  carousel.querySelector('.prev').style.visibility = current === 0 ? 'hidden' : 'visible';
+    items.forEach(tab => {
 
-  carousel.querySelector('.next').style.visibility = current === slides.length - 1 ? 'hidden' : 'visible';
+      tab.hidden = true;
 
-}
+      const href = tab.dataset.href;
+
+      const el = document.createElement(href ? "a" : "button");
+
+      el.className = "wp-tab-btn";
+
+      el.textContent = tab.dataset.title;
 
 
 
-// Hide prev button on page load for all carousels
+      if (href) {
 
-document.addEventListener('DOMContentLoaded', () => {
+        el.href = href;
 
-  document.querySelectorAll('.carousel').forEach(c => {
+        el.target = "_blank";
 
-    c.querySelector('.prev').style.visibility = 'hidden';
+        el.rel = "noopener";
+
+      } else {
+
+        el.type = "button";
+
+        el.setAttribute("aria-expanded", "false");
+
+        el.addEventListener("click", () => {
+
+          const opening = tab.hidden;
+
+          items.forEach(t => (t.hidden = true));
+
+          bar.querySelectorAll("button").forEach(b => {
+
+            b.classList.remove("active");
+
+            b.setAttribute("aria-expanded", "false");
+
+          });
+
+          if (opening) {
+
+            tab.hidden = false;
+
+            el.classList.add("active");
+
+            el.setAttribute("aria-expanded", "true");
+
+          }
+
+        });
+
+      }
+
+      bar.appendChild(el);
+
+    });
+
+
+
+    group.prepend(bar);
 
   });
 

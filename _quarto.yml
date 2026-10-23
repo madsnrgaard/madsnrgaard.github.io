@@ -9,7 +9,7 @@ website:
     right: 
       - text: "research"
         href: research.qmd
-      - text: "teaching" 
+      - text: "teaching"  
         href: "teaching.qmd" 
       - text: "cv"
         href: cv.qmd
@@ -17,7 +17,7 @@ website:
         href: "mailto:mnr@ps.au.dk"
         aria-label: "Email"
 
-  page-footer:
+  page-footer: 
     left:
       - text: "email &nbsp;"
         href: "mailto:mnr@ps.au.dk"
@@ -25,7 +25,7 @@ website:
         href: "https://www.au.dk/mnr@ps.au.dk"
     right: 
       - text: "updated: 08-09-2026"
-
+ 
 format:
   html:
     theme: 
@@ -34,7 +34,7 @@ format:
     css: styles.css
     toc: false
     link-external-newwindow: true
-    include-after-body: carousel.html
+    include-after-body: wp-tabs.html
 
 
 
