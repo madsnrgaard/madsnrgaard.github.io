@@ -79,15 +79,22 @@ body {
 }
 
 .bi-envelope {
-  font-size: clamp(0.4rem, 1vw, 0.8rem);
+  font-size: 0.7em;
   color: var(--ink-light);
-  position: relative;
-  top: 3px;
   transition: color 0.2s;
 }
 
 .nav-link:has(.bi-envelope):hover .bi-envelope {
   color: var(--ink);
+}
+
+/* collapsed (phone) menu */
+@media (max-width: 991.98px) {
+  .bi-envelope {
+    font-size: 0.8rem !important;  /* matches the text next to it */
+    vertical-align: middle;
+    position: static;              /* cancels any old top: 3px */
+  }
 }
 
 /* ── Main content ── */
