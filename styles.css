@@ -79,11 +79,10 @@ body {
 }
 
 .bi-envelope {
-  font-size: clamp(0.4rem, 1vw, 0.8rem);
+  font-size: 0.7em;
+  vertical-align: -0.1em;
   color: var(--ink-light);
-  position: relative;
-  top: 3px;
-  transition: color 0.2s; 
+  transition: color 0.2s;
 }
 
 .nav-link:has(.bi-envelope):hover .bi-envelope {
@@ -384,6 +383,43 @@ details summary::-webkit-details-marker {
  
 details[open] summary {
   margin-bottom: 0.4rem;
+}
+
+
+
+/* ── CV (USED FOR TEACHING) ── */
+.cv-entry {
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  gap: 0 1.4rem;
+  align-items: baseline;
+  margin-bottom: 1.2rem;
+}
+
+.cv-year {
+  font-family: var(--font-mono);
+  font-size: clamp(0.66rem, 1.8vw, 0.76rem);
+  color: var(--ink-faint);
+}
+
+.cv-title {
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
+  font-weight: 500;
+  color: var(--ink);
+  display: block;
+}
+
+.cv-sub {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  font-style: italic;
+  color: var(--ink);
+  display: block;
+}
+
+.cv-sub-sub {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: var(--ink);
+  display: block;
 }
 
 
