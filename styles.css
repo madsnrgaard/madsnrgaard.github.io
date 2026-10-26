@@ -191,7 +191,7 @@ hr {
 }
 
 /* ── Paper ── */
-/* ── Paper (used for publications, working papers, work in progress) ── */
+/* ── Paper (used for publications & working papers) ── */
 .paper {
   display: flex;
   flex-direction: column;
@@ -199,9 +199,23 @@ hr {
   max-width: 700px;
   padding: 1.6rem 0;
   margin-top: 0rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
- 
+
+.paper::after {
+  content: "";
+  display: block;
+  width: min(35rem, 100%);
+  height: 1px;                      /* thickness at the middle */
+  margin: 2.5rem auto -1rem;
+  background: radial-gradient(
+    ellipse at center,
+    var(--ink) 0%,
+    transparent 90%
+  );
+}
+
+
 .paper p {
   margin: 0;
   font-size: inherit;
@@ -232,7 +246,7 @@ hr {
 }
 .paper-meta em {
   font-style: italic;
-}
+} 
   
 .paper-abstract {
   font-size: clamp(0.75rem, 2vw, 0.92rem); 
@@ -240,6 +254,7 @@ hr {
   line-height: 1.3;
   font-style: normal;       /* italics come from *markdown* */
   margin-top: 0.5rem;
+  margin-bottom: -1rem;
 }
 
 .paper-abstract p {
@@ -253,7 +268,7 @@ hr {
   font-weight: 250;
   color: var(--ink-light);
   line-height: 1;
-  white-space: nowrap;     /* keeps "(Under review)" from splitting across lines */
+  white-space: nowrap;     
 }
 
 .paper-status {
@@ -263,102 +278,94 @@ hr {
   color: var(--ink-light);
   white-space: nowrap;     /* keeps "(Under review)" from splitting across lines */
 }
- 
-.wp-tabbar { 
+
+
+ .paper-tabbar {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   margin-top: 0.5rem;
 }
 
-.wp-tabbar > *:not(:last-child)::after {
-  content: "";
-  display: inline-block;
-  width: 0.28em;
-  height: 0.28em;
-  border-radius: 50%;
-  background: var(--accent);
-  margin: 0 0.8rem;
-  vertical-align: 0.18em;   /* raises the dot to the middle of the capitals */
-}  
-
-.wp-tab-btn {
+.paper-tab-btn {
   background: none;
   border: 0;
   padding: 0;
   font-family: var(--font-mono);
   font-size: clamp(0.6rem, 1.6vw, 0.68rem);
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--accent);
   cursor: pointer;
 }
 
-.wp-tab-btn.active {
+.paper-tab-btn::before { display: inline-block; content: "["; }
+.paper-tab-btn::after  { display: inline-block; content: "]"; }
+
+
+/* put the dot before every button except the first */
+.paper-tab-btn + .paper-tab-btn {
+  margin-left: calc(1ch + 0.06em);
+}
+.paper-tab-btn + .paper-tab-btn::before {
+  content: "\2022  [";    
+}
+ 
+.paper-tab-btn.active,
+.paper-tab-btn:hover {
   text-decoration: underline;
 }
 
-.wp-tab {
-  margin-top: 0.5rem;
-  font-size: clamp(0.75rem, 2vw, 0.95rem);
-  color: var(--ink-light);
+
+
+
+/* ── Paper (work in progess) ── */
+.in-progess-paper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
   max-width: 700px;
-  line-height: 1.4;
-}
- 
-.wp-tab[hidden] {
-  display: none;
-}
-
-.wp-tab p {
-  margin: 0;
-}
-
-
-/* ── Working Paper ── */
-.wp-paper {
   padding: 1.6rem 0;
-  max-width: 700px;
+  margin-top: 0rem;
   margin-bottom: 1rem;
-  margin-top: -2rem;
 }
 
-.wp-paper-title {
+.in-progess-paper p {
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+.in-progess-paper-title {
   font-size: clamp(0.9rem, 2.2vw, 1.1rem);
   font-weight: 450;
   color: var(--ink);
-  line-height: 1;
-  display: block;
-  margin-bottom: -0.5rem;
-  margin-top: 0rem;
+  line-height: 1.3;
 }
 
-.wp-paper-author {
-  font-size: clamp(0.75rem, 2vw, 0.92rem);
+.in-progess-paper-author {
+  font-size: 0.8em;
   color: var(--ink);
-  margin-top: 0;
-  margin-bottom: -0.5rem;
-  display: block;
+  line-height: 1.3;
 }
 
-.wp-paper-available {
-  font-size: clamp(0.75rem, 2vw, 0.92rem);
-  color: var(--ink);
-  font-style: italic;
-  margin-top: 0rem;
-  margin-bottom: -0.5rem;
-  display: block;
-}
 
-.wp-paper-abstract {
-  font-size: clamp(0.75rem, 2vw, 0.95rem);
-  color: var(--ink-light);
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+.paper figure {
+  margin: 2rem 0 0;
   max-width: 700px;
-  display: block;
-  line-height: 1.4;
 }
+
+.paper figure img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.paper:has(figure)::after {
+  margin-top: 2rem;
+}
+
+
 
 details summary {
   font-family: var(--font-mono);
@@ -379,87 +386,10 @@ details[open] summary {
   margin-bottom: 0.4rem;
 }
 
-.paper-links {
-  display: flex;
-  gap: 1.2rem;
-  margin-top: 0rem;
-}
-
-.paper-links a {
-  font-family: var(--font-mono);
-  font-size: clamp(0.45rem, 1.6vw, 0.68rem);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-
-
-
-/* ── In progress paper ── */
-.ip-paper {
-  padding: 1.6rem 0;
-  max-width: 700px;
-  margin-bottom: 1rem;
-  margin-top: -2rem;
-}
-
-.ip-paper-title {
-  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
-  font-weight: 450;
-  color: var(--ink);
-  line-height: 1;
-  display: block;
-  margin-bottom: -1rem;
-}
-
-.ip-paper-author {
-  font-size: clamp(0.75rem, 2vw, 0.92rem);
-  color: var(--ink);
-  margin-top: 0;
-  margin-bottom: -1.5rem;
-  display: block;
-}
-
-/* ── CV ── */
-.cv-entry {
-  display: grid;
-  grid-template-columns: 700px 1fr;
-  gap: 0 1.4rem;
-  align-items: baseline;
-  margin-bottom: 1.2rem;
-}
-
-.cv-year {
-  font-family: var(--font-mono);
-  font-size: clamp(0.66rem, 1.8vw, 0.76rem);
-  color: var(--ink-faint);
-}
-
-.cv-title {
-  font-size: clamp(0.9rem, 2.2vw, 1rem);
-  font-weight: 500;
-  color: var(--ink);
-  display: block;
-}
-
-.cv-sub {
-  font-size: clamp(0.8rem, 2vw, 0.9rem);
-  font-style: italic;
-  color: var(--ink);
-  display: block;
-}
-
-.cv-sub-sub {
-  font-size: clamp(0.8rem, 2vw, 0.9rem);
-  color: var(--ink);
-  display: block;
-}
 
 /* ── CV download button ── */
 .btn-cv {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: inline-block;
   margin-top: 2rem;
   font-family: var(--font-serif);
   font-size: clamp(1.5rem, 3.5vw, 2rem);
@@ -470,9 +400,17 @@ details[open] summary {
   border: none !important;
   padding: 0.65rem 1.2rem;
   transition: background 0.2s;
-}
+  text-decoration: none;
+} 
 
-.btn-cv:hover { background: var(--ink); }
+.btn-cv::before { content: "["; }
+.btn-cv::after  { 
+  display: inline-block;
+  content: "]"; }
+
+.btn-cv:hover {text-decoration: underline; }
+
+
 
 /* ── Footer ── */
 .nav-footer {

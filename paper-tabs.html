@@ -1,15 +1,15 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".wp-tabs").forEach(group => {
-    const items = [...group.querySelectorAll(":scope > .wp-tab")];
+  document.querySelectorAll(".paper-tabs").forEach(group => {
+    const items = [...group.querySelectorAll(":scope > .paper-tab")];
     const bar = document.createElement("div");
-    bar.className = "wp-tabbar";
+    bar.className = "paper-tabbar";
 
     items.forEach(tab => {
       tab.hidden = true;
       const href = tab.dataset.href;
       const el = document.createElement(href ? "a" : "button");
-      el.className = "wp-tab-btn";
+      el.className = "paper-tab-btn";
       el.textContent = tab.dataset.title;
 
       if (href) {
